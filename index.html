@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Canım aşkım barışalım mı?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+      background: #fdf6f6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    img {
+      max-width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 400; /* Yazı kalınlığı hafifletildi */
+      margin: 20px 0;
+      color: #BFA2C9; /* Pastel lila */
+    }
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px; /* Butonlar arasındaki boşluk */
+      position: relative;
+    }
+    button {
+      font-size: 20px;
+      padding: 12px 30px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    #evet {
+      background: #4CAF50;
+      color: white;
+      position: relative;
+    }
+    #hayir {
+      background: #f44336;
+      color: white;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="kedi.jpg" alt="Tatlı kedi"> <!-- kendi kedi resmini koy -->
+    <h1>Canım aşkım barışalım mı?</h1>
+    <div class="buttons">
+      <button id="evet">Evet</button>
+      <button id="hayir">Hayır</button>
+    </div>
+  </div>
+
+  <script>
+    const evetBtn = document.getElementById("evet");
+    const hayirBtn = document.getElementById("hayir");
+
+    evetBtn.addEventListener("click", () => {
+      window.location.href = "foto.html";
+    });
+
+    hayirBtn.addEventListener("mouseover", () => {
+      const x = Math.random() * (window.innerWidth - hayirBtn.offsetWidth);
+      const y = Math.random() * (window.innerHeight - hayirBtn.offsetHeight);
+      hayirBtn.style.position = 'absolute';
+      hayirBtn.style.left = `${x}px`;
+      hayirBtn.style.top = `${y}px`;
+    });
+  </script>
+</body>
+</html>

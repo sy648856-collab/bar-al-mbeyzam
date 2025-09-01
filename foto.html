@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Barıştık!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background: #fff5f5;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      position: relative;
+      text-align: center;
+    }
+    a img {
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    a img:hover {
+      transform: scale(1.05);
+    }
+    .container h1 {
+      position: relative;
+      margin-bottom: 20px;
+      color: #BFA2C9; /* Pastel lila */
+      font-size: 36px;
+      font-weight: 400; /* Hafif yazı kalınlığı */
+      font-family: 'Pacifico', cursive;
+      text-shadow: 1px 1px 3px white;
+    }
+    button {
+      margin-top: 40px;
+      padding: 12px 25px;
+      font-size: 20px;
+      border-radius: 12px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Barıştık ❤️</h1>
+    <a href="https://www.tiktok.com/@samet__beyza" target="_blank">
+      <img src="senin-fotografin.jpg" alt="Barıştık!">
+    </a>
+  </div>
+  <button onclick="window.location.href='index.html'">Geri Dön :)</button>
+</body>
+</html>
